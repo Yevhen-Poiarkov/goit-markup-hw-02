@@ -3,12 +3,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-}
+/* Хедер */
 .header {
   width: 1600px;
   height: 80px;
@@ -25,7 +20,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   color: black;
 
 }
@@ -34,10 +29,28 @@ body {
 }
 .header-nav {
   position: absolute;
-width: 1600px;
-height: 80px;
-left: 0px;
-top: 0px;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
 
-background: #FFFFFF;
+  background: #ffffff;
+}
+
+/* ----------FOOTER-------- */
+.footer-logo-web {
+  color: #2196f3;
+}
+.footer-logo {
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
