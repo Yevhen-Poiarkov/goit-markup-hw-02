@@ -1,19 +1,13 @@
 :root {
-	--first-btn-color: #2196f3;
-	--second-btn-color: #ffffff;
-	--first-btn-txt-color: #ffffff;
-	--second-btn-txt-color: #212121;
-	--main-title-color: #ffffff;
-	--second-title-color: #212121;
-	--main-nav-link-color: #212121;
-	--second-nav-link-color: #2196f3;
 	--paragraf-txt-color: #757575;
 	--main-txt-color: #212121;
-	--color-accent: #2196f3;
+	--accent-color: #2196f3;
+	--white-color: #ffffff;
 }
 
 body {
 	font-family: "Roboto", sans-serif;
+	font-size: 14px;
 }
 .list {
 	list-style: none;
@@ -26,6 +20,7 @@ body {
 }
 .text {
 	color: var(--paragraf-txt-color);
+	font-family: "Roboto";
 }
 
 .visually-hidden {
@@ -41,11 +36,8 @@ body {
 	margin: -1px;
 }
 /* Хедер */
-.header {
-	background: #ffffff;
-}
 .header-logo {
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
@@ -53,47 +45,40 @@ body {
 }
 .header-link:hover,
 .header-link:focus {
-	color: var(--second-nav-link-color);
+	color: var(--accent-color);
 }
 .header-logo-web {
-	color: #2196f3;
-}
-.header-nav {
-	background-color: #ffffff;
+	color: var(--accent-color);
 }
 
 .header-link {
-	color: var(--main-nav-link-color);
-	font-weight: 500px;
-	font-size: 14px;
+	color: var(--main-txt-color);
+	font-weight: 500;
 }
 .current {
-	color: var(--color-accent);
+	color: var(--accent-color);
 }
 .header-mail,
 .header-tel {
-	width: 1600px;
-	height: 80px;
 	color: var(--paragraf-txt-color);
 }
 .header-tel:hover,
 .header-tel:focus,
 .header-mail:hover,
 .header-tel:focus {
-	color: var(--second-nav-link-color);
+	color: var(--accent-color);
 }
 .hero {
 	background-color: #2f303a;
 }
 .hero-text {
-	font-family: "Roboto";
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: var(--white-color);
 }
 .hero-button {
 	font-family: inherit;
@@ -104,11 +89,10 @@ body {
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
-	color: #ffffff;
-	background-color: #2196f3;
+	color: var(--white-color);
+	background-color: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
-	cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -117,30 +101,25 @@ body {
 /* ------------------MAIN--BENEFITS------------- */
 
 .benefits {
-	background-color: #ffffff;
+	background-color: var(--white-color);
 }
 .benefits-pre-text {
-	font-family: "Roboto";
 	font-weight: 700;
-	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: var(--second-title-color);
+	color: var(--main-txt-color);
 }
 .benefits-text {
-	font-family: "Roboto";
-	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--paragraf-txt-color);
 }
 /* ------------------MAIN--ABOUT------------- */
 .about {
-	background-color: #ffffff;
+	background-color: var(--white-color);
 }
 .about-text {
-	font-family: "Roboto";
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
@@ -152,10 +131,9 @@ body {
 	background-color: #f5f4fa;
 }
 .team-li {
-	background-color: #ffffff;
+	background-color: var(--white-color);
 }
 .team-text {
-	font-family: "Roboto";
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
@@ -163,7 +141,6 @@ body {
 	color: var(--main-txt-color);
 }
 .team-user {
-	font-family: "Roboto";
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.18;
@@ -171,37 +148,38 @@ body {
 	color: var(--main-txt-color);
 }
 .team-user-en {
-	font-family: "Roboto";
 	font-size: 16px;
 	line-height: 1.18;
 	letter-spacing: 0.03em;
 	color: var(--paragraf-txt-color);
 }
+.button {
+	cursor: pointer;
+}
 
 /* -----------PORTFOLIO------------ */
 .section-work {
-	background-color: #ffffff;
+	background-color: var(--white-color);
 }
 .button-filter {
+	border: none;
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
 	letter-spacing: 0.03em;
-	color: var(--second-btn-txt-color);
-	cursor: pointer;
+	color: var(--main-txt-color);
 }
 .button-filter:hover,
 .button-filter:focus {
-	background-color: var(--first-btn-color);
-	color: var(--first-btn-txt-color);
+	background-color: var(--accent-color);
+	color: var(--white-color);
 }
 .work-li {
-	background-color: #ffffff;
+	background-color: var(--white-color);
 	border: 1px solid #eeeeee;
 }
 .work-name {
-	font-family: "Roboto";
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
@@ -209,7 +187,6 @@ body {
 	color: var(--main-txt-color);
 }
 .work-text {
-	font-family: "Roboto";
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.03em;
@@ -221,7 +198,7 @@ body {
 	background-color: #2f303a;
 }
 .footer-logo-web {
-	color: #2196f3;
+	color: var(--accent-color);
 }
 .footer-logo {
 	font-family: "Raleway";
@@ -229,19 +206,19 @@ body {
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
-	color: #ffffff;
+	color: var(--white-color);
 }
 .address-link {
 	font-family: "Roboto";
-	font-size: 14px;
+	font-style: normal;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-	color: #ffffff;
+	color: var(--white-color);
 }
 .footer-mail,
 .footer-tel {
 	font-family: "Roboto";
-	font-size: 14px;
+	font-style: normal;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
@@ -250,5 +227,5 @@ body {
 .footer-tel:focus,
 .footer-mail:hover,
 .footer-tel:focus {
-	color: var(--second-nav-link-color);
+	color: var(--accent-color);
 }
